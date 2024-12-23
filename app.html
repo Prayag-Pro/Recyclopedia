@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recyclopedia</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.2/dist/tailwind.min.css" rel="stylesheet"> <!-- Tailwind CDN link -->
+
+</head>
+<body class="bg-gray-100">
+
+<!-- Header Section -->
+<div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center bg-blue-500">
+    <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0" href="/">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-green-500 rounded-full" viewBox="0 0 24 24">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        <span class="ml-3 text-xl text-white">Eco-Saver Bricks</span>
+    </a>
+    <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+        <ul class="flex space-x-4">
+            <li><a href="about.html" class="mr-5 text-white hover:text-gray-900">About Us</a></li>
+            <li><a href="products.html" class="mr-5 text-white hover:text-gray-900">Our Products</a></li>
+            <li><a href="app.html" class="mr-5 text-white hover:text-gray-900">Our App</a></li>
+            <li><a href="contact.html" class="mr-5 text-white hover:text-gray-900">Contact Us</a></li>
+        </ul>
+    </nav>
+    <button id="homeButton" class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 text-blue-500">Back to Home
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+    </button>
+</div>
+
+<!-- Main Content Section -->
+<main class="container mx-auto px-5 py-12">
+    <!-- Login and Schedule Pickup Section -->
+    <section class="mb-12 space-y-12">
+        <!-- Login Section -->
+        <div id="login">
+            <h2 align="center" class="text-2xl font-semibold mb-4">Login</h2>
+            <form   id="loginForm" class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-md">
+                <input type="email" placeholder="Enter your email" id="email" required class="mb-4 w-full p-3 border rounded-md">
+                <input type="password" placeholder="Enter your password" id="password" required class="mb-4 w-full p-3 border rounded-md">
+                <button type="submit" class="w-full py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600">Login</button>
+            </form>
+        </div>
+
+        <!-- Schedule Pickup Section -->
+        <div id="pickup">
+            <h2 align="center" class="text-2xl font-semibold mb-4">Schedule a Pickup</h2>
+            <form id="pickupForm" method="POST" class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-md">
+                <input type="text" id="address" placeholder="Enter your address" required class="mb-4 w-full p-3 border rounded-md">
+                <button type="submit" class="w-full py-2 bg-green-500 text-white rounded-md hover:bg-green-600">Schedule Pickup</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- WhatsApp Contact Section -->
+    <section id="whatsapp" class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">Contact Us on WhatsApp</h2>
+        <p>If you have any questions or need assistance, feel free to reach out to us on WhatsApp!</p>
+        <a href="https://wa.me/+918602654199?text=Hi,%20I%20need%20assistance%20with%20Recyclopedia!" target="_blank">
+            <button class="py-2 px-6 bg-green-500 text-white rounded-md hover:bg-green-600 mt-4">Contact Us on WhatsApp</button>
+        </a>
+    </section>
+
+    <!-- Chatbot Section -->
+
+
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-4">
+    <p class="text-center">&copy; 2024 Recyclopedia. All rights reserved.</p>
+</footer>
+
+
+</body>
+</html>
